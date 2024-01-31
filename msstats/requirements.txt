@@ -1,0 +1,4 @@
+openpyxl>=3.0.4
+glob2
+pandas
+google-cloud-monitoring==2.10.1
