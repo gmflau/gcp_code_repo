@@ -1,4 +1,4 @@
-### GAE(Flask-Python-App)=>VPC-Connector=>NGINX(Internal-IP/TLS)=>REDl-on-GKEB
+### GAE(Flask-Python-App)=>VPC-Connector=>NGINX(Internal-IP/TLS)=>REDB-on-GKE
     
 #### 1. Create a runtime environment
 Follow this repo: https://github.com/Redislabs-Solution-Architects/redis-enterprise-cloud-gcp/tree/main/gke/access-via-nginx-server-tls/README.md to create a runtime environment
