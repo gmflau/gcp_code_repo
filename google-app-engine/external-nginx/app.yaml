@@ -1,0 +1,60 @@
+# Copyright 2018 Google Inc.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# [START memorystore_app_yaml_standard]
+runtime: python311
+entrypoint: gunicorn -b :$PORT main:app
+
+# Update with Redis instance details
+env_variables:
+  REDISHOST: 'redis-14133.demo.rec.34.71.212.116.nip.io'
+  REDISPORT: '443'
+  REDISPASSWORD: 'RTd120Ms'
+  REDISCERT: |
+    -----BEGIN CERTIFICATE-----
+    MIIFoTCCA4mgAwIBAgIBATANBgkqhkiG9w0BAQsFADBfMSQwIgYDVQQDDBtyZWMu
+    cmVkaXMuc3ZjLmNsdXN0ZXIubG9jYWwxEDAOBgNVBAsMB3JlZGlzZGIxJTAjBgNV
+    BAoMHFJlZGlzTGFicyBFbnRlcnByaXNlIENsdXN0ZXIwHhcNMjQwMTMwMTY1MTAz
+    WhcNMjUwMTI5MTY1MTAzWjBfMSQwIgYDVQQDDBtyZWMucmVkaXMuc3ZjLmNsdXN0
+    ZXIubG9jYWwxEDAOBgNVBAsMB3JlZGlzZGIxJTAjBgNVBAoMHFJlZGlzTGFicyBF
+    bnRlcnByaXNlIENsdXN0ZXIwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoIC
+    AQDOfeGLX4PnturUUj0HEp8U7J9/TpZMy8fkrU9PQ47I4FBhfp2mFGQu2L5gCNpG
+    OOr/vnswDNVKNQ1iSmBnyckl0vMkDyLom6dxAW5TX4TQiUr392hrUD9H8fRU+TKA
+    N8VxkaT42Ecs8DsY3XWdgjMz5vpkApdHBLZwIrLAcQp3FxqkALH03rLlZFOfkpAS
+    xAASOrDIxAXcJ9xIi27QedtnHkIeMEQz/s0qCq6sJU5ySngsdZ6J3xgaOFfJ9hFZ
+    D/3oL/ehPqxeI6A/xVulMVTkSEWt3Mg7caRSYYMfxV9QxIpJaQDmc1DUw8M2JAiH
+    FyVaD60x6Kc6y2shMPfXDlNsFwiiijZCIji+DUrkHVzA2bUoei4ts3JdR99Gns0H
+    AOYah2VJT6gdmzNiUpGmkgcdCEnhIfGlAiPAj958Yv063gyKWVyarUA4cXiJG7zx
+    AxD9XLN/C51skJbd+Snj+UQpZaC2TFgm7M+Eg+sXNTE2GyqeZeVL1OwAdpc01AQy
+    zhnm2qtgy8Q75OkvLKiKIEsStR3ZyeHES6621Y0VCJ0QTsqckD8FGYrfO3VwTWV8
+    AiZ2DSJl9v0WNe+JldS2Jegd2D79QF8/rZ/7oFiFyjEyNWY1uzDH4qNazbOmRmsG
+    BIqCDmlDdwmWrUGZbCus3ZAKDdO1i/4ai2u34atcZ0zCrQIDAQABo2gwZjAdBgNV
+    HSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwRQYDVR0RBD4wPIIbcmVjLnJlZGlz
+    LnN2Yy5jbHVzdGVyLmxvY2Fsgh0qLnJlYy5yZWRpcy5zdmMuY2x1c3Rlci5sb2Nh
+    bDANBgkqhkiG9w0BAQsFAAOCAgEALMZdjEAjUIkI+UQE8tuWHyR30Yx4kDYcu2CM
+    y+7x+Jk07+lhbvuTHVnqEE/u7emMQZ7685Z6LDGcDhoq1cXTcaJaP057jhRvIM84
+    zD6dhN8xV0NFPnYJeCjyyRoox0ct5XKvu+6qduoyedWe00YHYoR5ntbs5mgUNmZ3
+    rBldJ+Yf/i3+2RfecK1y/7hQetSOVwP8s+q56fHcy/mvaxY1vuIdqqRCIr7+JxW3
+    ba44ZaHPYnhuM8OPlPCT8brVy6fAKd/Ea5b5/79bqkPj1eVO6ibpp6vOnCFbiyeO
+    FPlZIoPXe7t4JtBCyAIeK2i/fgjldT8yzFZNtglEIhajuDlzyAnN/zv3CpTa8B0q
+    kdMD70hBvasyxgFHw6M87XQ/Ruh7XFlZV/iSJrdWno7q8rp+OGvIMu/jCvIglzLm
+    9rd4fTLbqvjqrTeZpmSRVZZsrh255gxk/brlsYZWSJF2f30b+jYhD0kbzCIw7lmW
+    E9GfCDxm+ztDucz2ZNMaBetVt2Pf/YHYTGG7JC1lNggETsJkIEW2Vb0IIZtj5NSX
+    axU0K/wFAaoLZDpBVnRdQg17mq1wApiX4Yl7QMpZb6kj17RQuZ94NA2b6y9sXSJa
+    a7CUjGNQK5zWCb4xJCoh0HfCZAlHZErohrJHovLAOBEqG99ZmyPMlpx/qmpaC4p3
+    uefGZ2s=
+    -----END CERTIFICATE-----
+
+# Update with Serverless VPC Access connector details
+vpc_access_connector:
+  name: 'projects/central-beach-194106/locations/us-central1/connectors/glau-gae-us-central1'
+# [END memorystore_app_yaml_standard]
