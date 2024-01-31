@@ -1,4 +1,4 @@
-### GAE(Flask-Python-App)=>VPC-Connector=>NGINX(Internal-IP/TLS)=>REDB
+### GAE(Flask-Python-App)=>VPC-Connector=>NGINX(Internal-IP/TLS)=>REDl-on-GKEB
     
 #### 1. Follow this repo: https://github.com/Redislabs-Solution-Architects/redis-enterprise-cloud-gcp/tree/main/gke/access-via-nginx-server-tls/README.md    
 For internal Nginx gateway address:
