@@ -1,11 +1,13 @@
 ### GAE(Flask-Python-App)=>VPC-Connector=>NGINX(Internal-IP/TLS)=>REDB
     
-#### 1. Follow this repo: https://github.com/Redislabs-Solution-Architects/redis-enterprise-cloud-gcp/tree/main/gke/access-via-nginx-server-tls/README.md    
-For internal Nginx gateway address:
+#### 1. Create a runtime environment
+Follow this repo: https://github.com/Redislabs-Solution-Architects/redis-enterprise-cloud-gcp/tree/main/gke/access-via-nginx-server-tls/README.md to create a runtime environment
+     
+For internal Nginx proxy IP address:
 ```
 kubectl apply -f nginx-ingress-controller-private-ip.yaml
 ```
-For external Nginx gateway address:
+For external Nginx proxy IP address:
 ```
 kubectl apply -f nginx-ingress-controller.yaml
 ```
