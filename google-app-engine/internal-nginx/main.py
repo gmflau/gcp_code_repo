@@ -10,7 +10,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# [START memorystore_main_py]
 import logging
 import os
 
@@ -54,4 +53,3 @@ if __name__ == "__main__":
     # application on Google App Engine and Cloud Run.
     # See entrypoint in app.yaml or Dockerfile.
     app.run(host="127.0.0.1", port=8080, debug=True)
-# [END memorystore_main_py]

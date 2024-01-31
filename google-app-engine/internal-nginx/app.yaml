@@ -10,7 +10,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# [START memorystore_app_yaml_standard]
 runtime: python311
 entrypoint: gunicorn -b :$PORT main:app
 
@@ -57,4 +56,3 @@ env_variables:
 # Update with Serverless VPC Access connector details
 vpc_access_connector:
   name: 'projects/central-beach-194106/locations/us-central1/connectors/glau-gae-us-central1'
-# [END memorystore_app_yaml_standard]
